@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: 23 בספט 2018
+ *      Author: ליטל
+ */
+
+#include "Solver.h"
+#include "Parser.h"
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "gurobi.h"
+#include "gurobi_c.h"
+#include <assert.h>
+#include "Game.h"
+#include "SPBufferset.h"
+#define solve 0
+#define edit 1
+#define init 2
+#define backtrack 3
+#define forwardtrack 7
+
+
+int main(int argc, char* argv[]){
+	srand(time(NULL));
+	mode=init;
+	/*editing(NULL);
+	generating(40,10);*/
+	gameOn();
+	return 1;
+ }
